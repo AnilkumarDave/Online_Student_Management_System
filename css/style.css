@@ -1,0 +1,185 @@
+/* ---------------- General ---------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ---------------- Headings ---------------- */
+h2, h3 {
+    color: #2c3e50;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* ---------------- Forms ---------------- */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ---------------- Buttons ---------------- */
+input[type="submit"], button, a.button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, button:hover, a.button:hover {
+    background-color: #2980b9;
+}
+
+a.logout {
+    background-color: #e74c3c;
+}
+
+a.logout:hover {
+    background-color: #c0392b;
+}
+
+/* ---------------- Tables ---------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ---------------- Sidebar ---------------- */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+.sidebar h3 {
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ecf0f1;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+/* ---------------- Main Content ---------------- */
+.main {
+    margin-left: 250px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* ---------------- Toggle Button ---------------- */
+.toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px){
+    .sidebar {width: 0; padding:0;}
+    .main {margin-left:0;}
+}
+
+/* ---------------- Form Messages ---------------- */
+p.success {
+    color: green;
+    font-weight: bold;
+}
+
+p.error {
+    color: red;
+    font-weight: bold;
+}
+/* ---------------- Status / Grade Labels ---------------- */
+.label {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Attendance */
+.label.present { background-color: #27ae60; } /* Green */
+.label.absent { background-color: #e74c3c; }  /* Red */
+
+/* Grades */
+.label.A { background-color: #2ecc71; }      /* Green */
+.label.B { background-color: #3498db; }      /* Blue */
+.label.C { background-color: #f1c40f; }      /* Yellow */
+.label.D { background-color: #e67e22; }      /* Orange */
+.label.F { background-color: #e74c3c; }      /* Red */
+.label.default { background-color: #7f8c8d; } /* Grey for unknown grades */
