@@ -40,6 +40,6 @@ A chronological record of key developments, updates, and repository maintenance.
 
 ---
 
-## 2025-09-25
+## 2025-10-30
 - Final repository cleanup.
 - Ensured all scripts run locally on **XAMPP** with sample database.
