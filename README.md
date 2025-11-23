@@ -1,191 +1,166 @@
-# 🧑‍🎓 Online Student Management System
+Online Student Management System (Academic Project – BCA, modernised)
 
-### 📅 Project Duration  
-**15 August 2014 – 15 September 2014 (1 month, Part-Time)**  
-**Academic Year:** 5th Semester (Bachelor of Computer Application)  
-**Institution:** Shree S. V. Patel College of Computer Science & Business Management, Gujarat, India  
-**University:** Veer Narmad South Gujarat University  
+📅 Project Duration: 15 August 2014 – 30 September 2014 (≈ 1.5 months, Part-Time)  
+Academic Year: Bachelor of Computer Application (BCA)  
+Institution: Shree S. V. Patel College of Computer Science & Business Management, Surat, India  
+University: Veer Narmad South Gujarat University  
+Mentor: Professor Kaushik Chauhan 
 
----
+🏫 Project Overview
+This project was originally built as part of my BCA coursework in 2014.
 
-## 🏫 Project Overview
+It is a web-based Online Student Management System developed with PHP and MySQL.
 
-This project was originally built in **2014** as part of my undergraduate coursework in **Bachelor of Computer Application**.  
-It is a web-based **Student Management System** developed using **PHP and MySQL**, designed to help administrators efficiently manage student information, attendance, and academic grades through a single digital platform.
+Key features:
 
-In **October 2025**, I modernised and uploaded the project to **GitHub** to make it compatible with the latest PHP version and updated database structure.
+- Admin module to manage student records (add, update, delete)
+- Attendance management for each student and subject
+- Grade/marks management with basic reports
+- Simple dashboard showing key counts and recent updates
 
----
+In October 2025, the project was modernised for PHP 8.2 and refreshed for portfolio purposes.
 
-## 🎯 Project Objective
+🎯 Project Objectives
 
-- To simplify and digitalise student record management.  
-- To reduce paperwork and manual errors in attendance and grading.  
-- To enable administrators to quickly access and update student data.  
-- To generate automated reports for better decision-making.  
-- To design a secure and efficient login system for authorized access.  
-- To provide a scalable structure that can easily be enhanced with new features.  
-- To improve overall administrative efficiency within educational institutions.  
+- Provide a central place for basic student data, attendance and grades  
+- Allow administrators to maintain records through a simple web UI  
+- Store data in MySQL with basic validation and relationships  
+- Generate simple lists and reports to support academic administration  
 
----
+⚙️ Modernisation Note
 
-## ⚙️ Modernisation Note
+| Originally Built | Modernised & Uploaded |
+|------------------|------------------------|
+| Aug–Sep 2014     | Oct 2025              |
 
-Originally built: **Aug–Sep 2014 (Academic project)**  
-Modernised & uploaded: **Oct 2025**
+Modern updates include:
 
-Modern updates:
-- Improved login security using `password_hash()`  
-- Updated UI for responsive sidebar navigation  
-- Added attendance and grades modules  
-- Cleaned and normalised MySQL schema  
-- Updated for PHP 8.2 compatibility  
+- ✅ Improved login security using `password_hash()`  
+- ✅ Cleaned and normalised MySQL schema  
+- ✅ Updated UI with more consistent layout and styling  
+- ✅ PHP 8.2 compatibility and removal of deprecated functions  
 
----
+🧩 System Features
 
-## 🌟 Advantages
+👨‍💻 Admin Panel
 
-✅ User-friendly interface and simple navigation  
-✅ Centralised data management for students, attendance, and grades  
-✅ Reduces manual workload and time required for report generation  
-✅ Easy to deploy using XAMPP on any local machine  
-✅ Expandable structure for multi-user or role-based systems  
+- Manage student records (create, update, deactivate)  
+- Record and update attendance for selected dates/subjects  
+- Record marks/grades and view basic performance summaries  
+- View simple lists and search/filter by name, ID or status  
 
----
+📂 Sample Data (example)
 
-## ⚠️ Limitations & How to Overcome Them
+| Category        | Examples                          |
+|-----------------|-----------------------------------|
+| Students        | 20+ demo student records          |
+| Subjects        | 5–8 subjects per sample class     |
+| Attendance data | Pre-inserted for demonstration    |
+| Admin user      | Single admin login for demo       |
 
-| Limitation | Description | Possible Improvement |
-|-------------|-------------|----------------------|
-| Single Admin Access | Only admin can manage data | Introduce multiple user roles (Admin, Teacher, Student) |
-| Manual Data Entry | Students must be added manually | Integrate CSV import or Excel upload |
-| No Online Access | Works locally via XAMPP | Deploy using cloud hosting or remote database |
-| No Notifications | Lacks attendance/grade alerts | Add email or SMS notifications using PHPMailer |
-| Limited Analytics | Reports are basic | Add charts and performance analytics using Chart.js |
+💻 Project Files (core PHP)
 
----
+| File                     | Description                       |
+|--------------------------|-----------------------------------|
+| `index.php`              | Admin login                       |
+| `dashboard.php`          | Simple dashboard/home page        |
+| `students.php`           | List/manage students              |
+| `attendance.php`         | Manage attendance                 |
+| `grades.php`             | Manage grades/marks               |
+| `db.php`                 | Database connection               |
+| `style.css`              | Shared CSS styles                 |
+| `README.md`              | Project documentation             |
 
-## ⏱️ Project Timeline
+⚠️ Limitations
 
-| Phase | Task | Duration |
-|-------|-------|----------|
-| Phase 1 | Requirement gathering & database design | 2 days |
-| Phase 2 | UI/UX design & HTML layout | 4 days |
-| Phase 3 | PHP & MySQL integration | 5 days |
-| Phase 4 | Testing & validation | 2 days |
-| Phase 5 | Documentation & presentation | 2 days |
+| Limitation                            | Description                             | Possible Improvement                                  |
+|---------------------------------------|-----------------------------------------|-------------------------------------------------------|
+| Single admin role                     | Only one admin account used             | Add multiple roles (Admin, Teacher, Clerk)           |
+| Local deployment                      | Designed for local XAMPP/WAMP           | Deploy on cloud/remote server                        |
+| Basic validation and security         | Limited protection against misuse       | Harden input validation, add CSRF protection, HTTPS  |
+| Simple reporting                      | Basic lists and counts only             | Add richer summary and trend reports                 |
 
-**Total Duration:** 1 month (Part-Time)
+🌟 Advantages
 
----
+- ✅ Simple, easy-to-understand design for academic demonstration  
+- ✅ Centralised management of student, attendance and grade data  
+- ✅ Straightforward PHP + MySQL setup (XAMPP/WAMP)  
+- ✅ Modernised for current PHP versions  
 
-## 🚀 Key Performance Indicators (KPIs)
+⏱️ Project Timeline (original build)
 
-| KPI | Measurement |
-|-----|--------------|
-| Data Accuracy | 100% accurate student and attendance records |
-| System Uptime | 99% (during testing) |
-| Processing Time | < 1 second per record entry |
-| Report Generation Time | < 3 seconds for 100+ records |
-| User Satisfaction | Positive feedback from faculty during testing |
+| Week | Task                                         |
+|------|----------------------------------------------|
+| Week 1 | Requirement gathering, database design    |
+| Week 2 | Setup MySQL & PHP environment             |
+| Week 3 | Student CRUD and login functionality      |
+| Week 4 | Attendance and grades modules             |
+| Week 5 | Basic reporting and testing               |
+| Week 6 | Documentation and submission              |
 
----
+🔮 Future Scope
 
-## 🔮 Future Scope
+- Add parent/guardian logins  
+- Add export to CSV/Excel for reports  
+- Add richer analytics (attendance trends, grade distributions)  
+- Implement role-based access control and additional security  
 
-- Add **student login portal** for viewing personal attendance and grades.  
-- Introduce **teacher accounts** for individual class management.  
-- Implement **REST API** for integration with mobile apps.  
-- Include **analytics dashboard** for performance trends.  
-- Deploy on a **cloud platform (AWS, Azure, or Firebase)** for online accessibility.  
+🚀 Quick Setup
 
----
-
-## 🧩 Features Summary
-
-| Feature | Description |
-|----------|-------------|
-| 👨‍🏫 Admin Login | Secure authentication for admin users |
-| 🧑‍🎓 Student Management | Add, view, and edit student records |
-| 🗓️ Attendance Tracking | Mark and view attendance per class |
-| 🧮 Grades Management | Add or update grades for each student |
-| 📊 Reports | Generate summaries of grades & attendance |
-| 🎨 Dashboard | Responsive layout with navigation sidebar |
-
----
-
-## 💻 Technologies Used
-
-| Category | Tools |
-|-----------|-------|
-| Frontend | HTML5, CSS3, JavaScript |
-| Backend | PHP (Procedural) |
-| Database | MySQL |
-| Server | XAMPP (Apache + MySQL) |
-| Version Control | Git & GitHub |
-
----
-
-## 🗄️ Database Information
-
-**Database Name:** `student_management`  
-**Tables Included:**  
-- `students` – Basic details (name, class, email, contact)  
-- `attendance` – Attendance records (date, status, student ID)  
-- `grades` – Grades per subject (student ID, subject, grade)  
-
-> All database data is **self-created** for demo and testing purposes.
-
----
-
-## ⚡ Quick Setup Guide
-
-1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/YOUR-USERNAME/Online_Student_Management_System.git
+# Clone repository
+git clone https://github.com/AnilkumarDave/Online_Student_Management_System.git
+cd Online_Student_Management_System
+```
 
-2️⃣ Move project to your XAMPP htdocs folder
-C:\xampp\htdocs\
+Import the project database into phpMyAdmin (for example `student_management_system.sql`).
 
-3️⃣ Start Apache & MySQL using XAMPP Control Panel
+Update `db.php` if credentials differ:
 
-4️⃣ Create the database
+```php
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "student_management_system";
+$conn = new mysqli($servername, $username, $password, $dbname);
+```
 
-Go to http://localhost/phpmyadmin
-Create a database named student_management
-Import database.sql
+Start Apache & MySQL in XAMPP/WAMP and visit in a browser:
 
-5️⃣ Run the project
-Open http://localhost/Online_Student_Management_System/
+```text
+http://localhost/Online_Student_Management_System/index.php
+```
 
-📜 Disclaimer
+exit
 
-This project was originally developed as part of my academic coursework in 2014 and later refreshed in 2025 for learning and demonstration.
-All data used is fictional and created for educational purposes only.
+## 🔧 Test Automation & QA (Java + Selenium + JUnit, Gradle, RestAssured, Extent Reports)
 
-🧠 Future Enhancements
+Alongside the core PHP + MySQL application, this project now includes a
+separate **Java-based UI and API test suite** in the `/automation` folder.
 
-Move to Laravel or Django framework
+The test suite demonstrates how I:
 
-Add login sessions for teachers and students
+- Use **Java** with **JUnit 5** to structure automated tests  
+- Use **Selenium WebDriver** to automate browser interactions with the
+  login and student dashboard screens  
+- Use **RestAssured** to test simple JSON endpoints (for example, a student list API)  
+- Use **Extent Reports** to generate readable HTML summaries of the automated tests  
+- Build and run tests with **Gradle**, and integrate them into a simple
+  **Jenkins** pipeline  
 
-Integrate AI for grade prediction
+This reflects how an academic PHP project can be treated more like a production
+application with automated regression tests for both UI and basic APIs.
 
-Automate attendance with RFID or facial recognition
+---
 
-🧾 License
+## 📜 Disclaimer
 
-This project is open-sourced for educational use under the MIT License.
+This project was developed for academic purposes in 2014 and modernised in 2025.  
+All data is fictional and intended for educational/demo purposes only.
 
-🧩 Conclusion
+---
 
-The Online Student Management System successfully demonstrates how web technologies can automate core administrative functions within educational institutions.
-Through PHP and MySQL integration, the project achieves efficiency, data consistency, and ease of management for student records, attendance, and grades.
-This academic initiative laid the foundation for understanding database-driven systems, authentication, and backend development, which remain essential skills for modern software projects.
-The modernised version showcases the ability to maintain and upgrade legacy academic work to align with current software standards.
+## ✨ Author
 
-✨ Author
-
-Name: Anilkumar Dave
+Name: Anilkumar Dave  
 Email: daveanil48@gmail.com
-
